@@ -448,8 +448,8 @@ animation-delay:1.5s;
 
     position:absolute;
 
-    width:180px;
-    height:4px;
+    width:120px;
+    height:2px;
 
     background:linear-gradient(
         90deg,
@@ -457,7 +457,12 @@ animation-delay:1.5s;
         rgba(255,215,0,1)
     );
 
-    animation:meteor 2.5s linear infinite;
+    box-shadow:
+    0 0 10px #FFD700,
+    0 0 20px #FFD700;
+
+    animation:meteor 3s linear infinite;
+
 }
 
 .shooting-stars span:nth-child(1){
