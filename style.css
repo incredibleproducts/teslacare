@@ -59,6 +59,10 @@ body{
     flex:1;
 
     text-align:center;
+    
+    position:relative;
+
+    overflow:hidden;
 
 }
 
@@ -419,14 +423,25 @@ animation-delay:1.5s;
 }
 
 .shooting-stars{
+
     position:absolute;
+
     top:0;
-    left:0;
-    width:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:550px;
+
     height:100%;
-    z-index:2;
+
     overflow:hidden;
+
     pointer-events:none;
+
+    z-index:2;
+
 }
 
 .shooting-stars span{
