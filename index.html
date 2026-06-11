@@ -1,495 +1,209 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+<!DOCTYPE html>
 
-body{
+<html lang="en">
 
-    font-family:Arial, Helvetica, sans-serif;
+<head>
 
-    background:#f4f6f9;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    color:#111827;
+<title>TeslaCare | Advanced Wellness Technology</title>
 
-}
+<meta name="description"
+   content="Explore innovative terahertz wellness technology designed for modern lifestyles.">
 
-/* HERO */
+<link rel="stylesheet" href="style.css">
 
-.hero{
+</head>
 
-    min-height:auto;
-    padding:50px 40px;
+<body>
 
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:
-    linear-gradient(
-        135deg,
-        #03142f,
-        #102c5c
-    );
-
-    padding:40px;
-
-}
-
-.container{
-
-    width:100%;
-
-    max-width:1200px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:60px;
-
-}
-
-.image-side{
-
-    flex:1;
-
-    text-align:center;
-
-}
-
-.image-side img{
-
-    width:100%;
-
-    max-width:550px;
-
-}
-.product-video{
-
-    width:100%;
-
-    max-width:550px;
-
-    height:auto;
-
-    border-radius:20px;
-
-    object-fit:cover;
-
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.20);
-
-}
-.content-side{
-
-    flex:1;
-
-    color:white;
-
-}
-
-.badge{
-
-    display:inline-block;
-
-    background:#22c55e;
-
-    color:white;
-
-    padding:10px 20px;
-
-    border-radius:999px;
-
-    font-size:13px;
-
-    font-weight:bold;
-
-    margin-bottom:35px;
-
-}
-
-.content-side h1{
-
-    font-size:3rem;
-
-    line-height:1.1;
-
-    margin-bottom:25px;
-
-}
-
-.content-side p{
-
-    font-size:1.1rem;
-
-    margin-bottom:25px;
-
-    color:#d9e4f2;
-
-}
-
-.content-side ul{
-
-    list-style:none;
-
-    margin-bottom:35px;
-
-}
-
-.content-side li{
-
-    margin-bottom:12px;
-
-}
-
-/* BOTÃO */
-
-.buy-btn{
-
-    display:inline-block;
-
-    text-decoration:none;
-
-    background:#FFD700;
-
-    color:#111827;
-
-    padding:18px 45px;
-
-    border-radius:999px;
-
-    font-size:1.1rem;
-
-    font-weight:bold;
-
-    transition:.3s;
-
-}
-
-.buy-btn:hover{
-
-    background:#16a34a;
-
-    transform:translateY(-2px);
-
-}
-
-/* BENEFITS */
-
-.benefits{
-
-    max-width:1200px;
-
-    margin:30px auto;
-
-    display:flex;
-
-    gap:25px;
-
-    justify-content:center;
-
-    padding:0 20px;
-
-}
-
-.card{
-
-    flex:1;
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-    box-shadow:
-    0 10px 20px rgba(0,0,0,.08);
-
-}
-
-.card h3{
-
-    margin-bottom:10px;
-
-}
-
-/* CTA */
-
-.cta{
-
-    text-align:center;
-
-    padding:40px 20px;
-
-}
-
-.cta h2{
-
-    margin-bottom:25px;
-
-    font-size:2rem;
-
-}
-
-@media(max-width:900px){
-
-    .container{
-
-        flex-direction:column;
-
-        text-align:center;
-
-    }
-
-    .benefits{
-
-        flex-direction:column;
-
-    }
-
-    .content-side h1{
-
-        font-size:2.2rem;
-
-    }
-
-    /* =========================
-HERO EFFECTS
-========================= */
-
-.hero{
-
-```
-position:relative;
-
-overflow:hidden;
-```
-
-}
-
-.product-video{
-
-```
-width:100%;
-
-max-width:420px;
-
-border-radius:20px;
-
-box-shadow:
-0 20px 50px rgba(0,0,0,.35);
-```
-
-}
-
-/* =========================
-PARTICLES
-========================= */
-
-.stars{
-
-```
-position:absolute;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-z-index:10;
-pointer-events:none;
-```
-
-}
-.container{
-    position:relative;
-    z-index:20;
-}
-.stars span{
-
-```
-position:absolute;
-
-width:12px;
-height:12px;
-
-background:#FFD700;
-
-border-radius:50%;
-
-box-shadow:
-0 0 15px #FFD700,
-0 0 30px #FFD700,
-0 0 60px #FFD700;
-
-animation:shoot 6s linear infinite;
-```
-
-}
-
-.stars span:nth-child(1){
-top:10%;
-left:15%;
-animation-delay:0s;
-}
-
-.stars span:nth-child(2){
-top:25%;
-left:85%;
-animation-delay:1s;
-}
-
-.stars span:nth-child(3){
-top:40%;
-left:65%;
-animation-delay:2s;
-}
-
-.stars span:nth-child(4){
-top:70%;
-left:25%;
-animation-delay:3s;
-}
-
-.stars span:nth-child(5){
-top:55%;
-left:90%;
-animation-delay:4s;
-}
-
-.stars span:nth-child(6){
-top:15%;
-left:55%;
-animation-delay:2.5s;
-}
-
-.stars span:nth-child(7){
-top:80%;
-left:70%;
-animation-delay:5s;
-}
-
-.stars span:nth-child(8){
-top:30%;
-left:35%;
-animation-delay:1.5s;
-}
-
-@keyframes shoot{
-
-```
-0%{
-
-    transform:
-    translateX(0)
-    translateY(0);
-
-    opacity:0;
-
-}
-
-10%{
-
-    opacity:1;
-
-}
-
-100%{
-
-    transform:
-    translateX(-250px)
-    translateY(250px);
-
-    opacity:0;
-
-}
+<section class="hero">
 
 ```
 
-}
+<!-- PARTICLES -->
 
+<div class="stars">
 
-}
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 
-.shooting-stars{
-    position:absolute;
-    inset:0;
-    overflow:hidden;
-    pointer-events:none;
-}
+</div>
+   
+<div class="shooting-stars">
 
-.shooting-stars span{
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
 
-    position:absolute;
+</div>
+   
+<div class="container">
 
-    width:120px;
-    height:2px;
+    <div class="image-side">
 
-    background:linear-gradient(
-        90deg,
-        rgba(255,215,0,0),
-        rgba(255,215,0,1)
-    );
+        <video
+            class="product-video"
+            autoplay
+            muted
+            loop
+            playsinline>
 
-    animation:meteor 4s linear infinite;
-}
+            <source src="teslacare.mp4" type="video/mp4">
 
-.shooting-stars span:nth-child(1){
-    top:10%;
-    left:80%;
-}
+        </video>
 
-.shooting-stars span:nth-child(2){
-    top:25%;
-    left:60%;
-    animation-delay:1s;
-}
+    </div>
 
-.shooting-stars span:nth-child(3){
-    top:45%;
-    left:90%;
-    animation-delay:2s;
-}
+    <div class="content-side">
 
-.shooting-stars span:nth-child(4){
-    top:70%;
-    left:70%;
-    animation-delay:3s;
-}
+        <span class="badge">
 
-.shooting-stars span:nth-child(5){
-    top:30%;
-    left:40%;
-    animation-delay:1.5s;
-}
+            ADVANCED TERAHERTZ TECHNOLOGY
 
-@keyframes meteor{
+        </span>
 
-    0%{
-        transform:
-        translate(0,0)
-        rotate(135deg);
+        <h1>
 
-        opacity:0;
-    }
+            Embrace Tomorrow's
+            Wellness Solutions
 
-    10%{
-        opacity:1;
-    }
+        </h1>
 
-    100%{
-        transform:
-        translate(-400px,400px)
-        rotate(135deg);
+        <p>
 
-        opacity:0;
-    }
+            Discover TeslaCare, an innovative wellness device designed
+            for people looking for smarter and more convenient ways
+            to support their daily wellness routine.
 
-}
+        </p>
+
+        <ul>
+
+            <li>✓ Easy to use</li>
+
+            <li>✓ Travel-friendly design</li>
+
+            <li>✓ Non-invasive wellness technology</li>
+
+            <li>✓ Portable and convenient</li>
+
+            <li>✓ Multi-purpose wellness support</li>
+
+        </ul>
+
+        <a
+            href="https://www.checkout-ds24.com/redir/577873/adampadua/"
+            target="_blank"
+            class="buy-btn">
+
+            DISCOVER TESLACARE →
+
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<section class="benefits">
+
+```
+<div class="card">
+
+    <h3>
+
+        Portable
+
+    </h3>
+
+    <p>
+
+        Lightweight and compact, making it easy to use at home,
+        while traveling or during daily activities.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>
+
+        Non-Invasive
+
+    </h3>
+
+    <p>
+
+        No complicated procedures or difficult setups.
+        Simply incorporate it into your wellness routine.
+
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>
+
+        Modern Technology
+
+    </h3>
+
+    <p>
+
+        Built around innovative terahertz concepts and designed
+        for modern lifestyles.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<section class="cta">
+
+```
+<h2>
+
+    Ready To Explore TeslaCare?
+
+</h2>
+
+<p>
+
+    Discover how innovative wellness technology can become
+    part of your daily lifestyle.
+
+</p>
+
+<br>
+
+<a
+    href="https://www.checkout-ds24.com/redir/577873/adampadua/"
+    target="_blank"
+    class="buy-btn">
+
+    LEARN MORE →
+
+</a>
+```
+
+</section>
+
+</body>
+
+</html>
